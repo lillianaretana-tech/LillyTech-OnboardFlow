@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0B132B">
+<title>LillyTech OnboardFlow | Candidato</title>
+<style>
+:root{--navy:#0B132B;--navy2:#1B294D;--ivory:#FAF8F2;--copper:#C9782A;--copper2:#E4A35F;--ink:#242936;--muted:#667085;--surface:#fff;--soft:#F2F1EC;--line:#E7E4DC;--success:#16835D;--warning:#C98A14;--danger:#C4473A;--info:#3D6FA7;--shadow:0 14px 38px rgba(11,19,43,.10);--display:Georgia,"Times New Roman",serif;--body:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--body);line-height:1.45}.top{background:var(--navy);color:#fff;padding:14px 16px}.top-inner{max-width:900px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{display:flex;align-items:center;gap:11px}.mark{width:45px;height:45px;border-radius:14px;background:var(--copper);display:grid;place-items:center;font-family:var(--display);font-size:20px;font-weight:800}.brand strong{font-family:var(--display);font-size:21px}.brand small{display:block;color:#d7dce6}.shell{max-width:900px;margin:auto;padding:22px 14px 80px}.hero{padding:24px 0 18px}.eyebrow{color:var(--copper);font-size:12px;letter-spacing:.17em;text-transform:uppercase;font-weight:900;margin-bottom:8px}h1,h2{font-family:var(--display);color:var(--navy)}h1{font-size:clamp(35px,8vw,54px);line-height:1.02;margin:0}h2{font-size:28px;margin:0 0 5px}.lead{color:var(--muted);font-size:16px;max-width:680px}.card{background:#fff;border:1px solid var(--line);border-radius:25px;padding:22px;box-shadow:var(--shadow)}.stepper{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;margin-bottom:18px}.step{height:7px;border-radius:999px;background:#e7e3da}.step.active,.step.done{background:linear-gradient(90deg,var(--copper),var(--copper2))}.screen{display:none}.screen.active{display:block}.field{margin:15px 0}.label{display:block;font-weight:900;font-size:13px;margin-bottom:6px}.input{width:100%;min-height:50px;border:1px solid #d6d2c8;border-radius:15px;padding:12px 14px;background:white;color:var(--ink);outline:none}.input:focus{border-color:var(--copper);box-shadow:0 0 0 3px rgba(201,120,42,.13)}.code{font-size:22px;letter-spacing:.16em;text-transform:uppercase;font-weight:900}.btn{border:0;border-radius:15px;min-height:48px;padding:11px 18px;font-weight:900;display:inline-flex;align-items:center;justify-content:center;gap:8px;cursor:pointer}.primary{background:var(--copper);color:#fff;box-shadow:0 9px 19px rgba(201,120,42,.22)}.secondary{background:white;border:1px solid #d7d3ca;color:var(--navy)}.actions{display:flex;gap:9px;justify-content:flex-end;flex-wrap:wrap;margin-top:20px}.alert{border-radius:16px;padding:14px 15px;border-left:4px solid;font-size:13px;margin-top:14px}.info{background:#edf5fc;border-color:var(--info)}.warn{background:#fff6e1;border-color:var(--warning)}.bad{background:#fbe9e7;border-color:var(--danger)}.ok{background:#e8f5ef;border-color:var(--success)}.hidden{display:none!important}.rules{display:grid;gap:11px;margin-top:17px}.rule{display:flex;gap:12px;align-items:flex-start;background:#fbfaf7;border:1px solid var(--line);border-radius:18px;padding:15px}.rule-icon{width:38px;height:38px;flex:0 0 38px;border-radius:13px;background:#f5eadc;display:grid;place-items:center;font-size:20px}.rule strong{display:block;color:var(--navy);margin-bottom:3px}.rule span{color:var(--muted);font-size:13px}.checkline{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-weight:700;font-size:13px}.checks{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}.check{border:1px solid var(--line);border-radius:18px;padding:17px;text-align:center;background:#fff}.check-icon{font-size:28px}.check small{display:block;color:var(--muted);margin-top:5px}.tutorial{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}.tutorial-card{border:1px solid var(--line);border-radius:20px;padding:18px;background:#fff}.hand-demo{width:72px;height:72px;border-radius:22px;background:#f5eadc;display:grid;place-items:center;font-size:36px;margin-bottom:12px}.waiting{text-align:center;padding:12px 0}.countdown{font-family:var(--display);font-size:54px;color:var(--navy);font-weight:700;margin:12px 0}.ticket{max-width:540px;margin:20px auto 0;background:#fbfaf7;border:1px solid var(--line);border-radius:20px;padding:17px;text-align:left}.kv{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid #ece8df}.kv:last-child{border-bottom:0}.kv span{color:var(--muted)}.journey{display:grid;gap:11px;margin-top:16px}.module{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;border:1px solid var(--line);border-radius:18px;padding:14px}.modicon{width:45px;height:45px;border-radius:15px;background:var(--soft);display:grid;place-items:center;font-size:21px}.module h3{font-family:var(--body);font-size:14px;margin:0 0 3px;color:var(--navy)}.module p{font-size:12px;color:var(--muted);margin:0}.pill{display:inline-flex;align-items:center;border-radius:999px;padding:6px 9px;font-size:11px;font-weight:900}.pill-ok{background:#e8f5ef;color:var(--success)}.pill-info{background:#eaf2fb;color:var(--info)}.pill-neutral{background:#efede7;color:#5b6270}.footer{text-align:center;color:var(--muted);font-size:12px;padding:22px}
+@media(max-width:700px){.checks,.tutorial{grid-template-columns:1fr 1fr}.module{grid-template-columns:auto 1fr}.module .pill{grid-column:1/-1;justify-self:start}.card{padding:18px}.actions .btn{flex:1}}
+@media(max-width:480px){.checks,.tutorial{grid-template-columns:1fr}.brand small{display:none}}
+</style></head>
+<body>
+<header class="top"><div class="top-inner"><div class="brand"><div class="mark">LT</div><div><strong>LillyTech</strong><small>OnboardFlow · Acceso seguro</small></div></div><span style="font-size:12px;color:#d7dce6">Invitación validada por RH</span></div></header>
+<main class="shell">
+<section class="hero"><div class="eyebrow">Proceso de inducción</div><h1 id="pageTitle">Bienvenido</h1><p class="lead" id="pageLead">Valide su invitación para comenzar.</p></section>
+<div class="stepper"><div class="step active"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div></div>
+
+<section class="card screen active" data-screen="0">
+<h2>Validar mi ingreso</h2><p class="lead">Escriba los datos exactamente como aparecen en la invitación.</p>
+<div class="field"><label class="label">Nombre completo</label><input class="input" id="fullName" value="María González"></div>
+<div class="field"><label class="label">Número de identificación</label><input class="input" id="documentId" value="1-2345-6789"></div>
+<div class="field"><label class="label">Código de acceso</label><input class="input code" id="accessCode" placeholder="Ej. K7MR-42" maxlength="9"></div>
+<div style="font-size:12px;color:var(--muted)">Código de demostración: <strong>K7MR-42</strong></div>
+<div id="codeMessage" class="alert warn hidden"></div>
+<div class="actions"><button class="btn primary" onclick="validateAccess()">Validar mi ingreso</button></div>
+</section>
+
+<section class="card screen" data-screen="1">
+<h2>Su convocatoria</h2><p class="lead">Confirme que los datos son correctos.</p>
+<div class="ticket"><div class="kv"><span>Participante</span><strong id="confirmedName">María González</strong></div><div class="kv"><span>Proyecto</span><strong>Industria Médica</strong></div><div class="kv"><span>Supervisor</span><strong>Carlos Ramírez</strong></div><div class="kv"><span>Fecha</span><strong>Miércoles 15 de julio</strong></div><div class="kv"><span>Hora</span><strong>7:30 a. m.</strong></div></div>
+<div class="actions"><button class="btn secondary" onclick="go(0)">Atrás</button><button class="btn primary" onclick="go(2)">Los datos son correctos</button></div>
+</section>
+
+<section class="card screen" data-screen="2">
+<h2>Reglas de participación</h2><p class="lead">Estas reglas aplican durante toda la inducción.</p>
+<div class="rules">
+<div class="rule"><div class="rule-icon">📹</div><div><strong>Cámara siempre encendida</strong><span>Debe permanecer visible durante toda la sesión, salvo indicación del instructor.</span></div></div>
+<div class="rule"><div class="rule-icon">🔇</div><div><strong>Micrófono en silencio</strong><span>Manténgalo apagado mientras otra persona esté hablando.</span></div></div>
+<div class="rule"><div class="rule-icon">✋</div><div><strong>Levante la mano antes de hablar</strong><span>Úsela cuando tenga una pregunta, una duda, quiera hacer un comentario o necesite informar un problema. Mantenga el micrófono apagado y espere a que el instructor le dé la palabra.</span></div></div>
+<div class="rule"><div class="rule-icon">⏱️</div><div><strong>Puntualidad</strong><span>La tolerancia máxima es de 5 minutos. Después, su supervisor debe justificar el ingreso.</span></div></div>
+<div class="rule"><div class="rule-icon">📝</div><div><strong>Evaluaciones</strong><span>La nota mínima para aprobar cada examen es 80.</span></div></div>
+<div class="rule"><div class="rule-icon">🌐</div><div><strong>Desconexiones</strong><span>Si pierde conexión durante un módulo, puede ser necesario repetir ese módulo.</span></div></div>
+</div>
+<label class="checkline"><input id="acceptRules" type="checkbox">He leído y comprendo las reglas.</label>
+<div class="actions"><button class="btn secondary" onclick="go(1)">Atrás</button><button class="btn primary" onclick="acceptAndContinue()">Aceptar y continuar</button></div>
+</section>
+
+<section class="card screen" data-screen="3">
+<h2>Verificación del equipo</h2><p class="lead">Pruebe su dispositivo antes de entrar.</p>
+<div class="checks"><div class="check"><div class="check-icon">🌐</div><strong>Internet</strong><small id="internetStatus">Pendiente</small></div><div class="check"><div class="check-icon">📹</div><strong>Cámara</strong><small id="cameraStatus">Pendiente</small></div><div class="check"><div class="check-icon">🎤</div><strong>Micrófono</strong><small id="micStatus">Pendiente</small></div><div class="check"><div class="check-icon">🔊</div><strong>Audio</strong><small id="audioStatus">Pendiente</small></div></div>
+<div id="equipmentMessage" class="alert info hidden"></div>
+<div class="actions"><button class="btn secondary" onclick="go(2)">Atrás</button><button class="btn secondary" onclick="runEquipmentCheck()">Probar equipo</button><button class="btn primary" id="equipmentNext" onclick="go(4)" disabled>Continuar</button></div>
+</section>
+
+<section class="card screen" data-screen="4">
+<h2>Cómo participar en Teams</h2><p class="lead">Practique antes de entrar.</p>
+<div class="tutorial"><div class="tutorial-card"><div class="hand-demo">✋</div><strong>¿Necesita hablar?</strong><p class="lead">Presione <b>Levantar la mano</b> para preguntar, aclarar una duda, comentar o informar un problema.</p><button class="btn secondary" onclick="practiceHand(this)">Practicar</button></div><div class="tutorial-card"><div class="hand-demo">🔇</div><strong>Espere su turno</strong><p class="lead">Mantenga el micrófono apagado hasta que el instructor le dé la palabra. Al terminar, vuelva a silenciarlo.</p></div></div>
+<div id="handMessage" class="alert ok hidden">¡Muy bien! Después de levantar la mano, espere la autorización del instructor.</div>
+<div class="actions"><button class="btn secondary" onclick="go(3)">Atrás</button><button class="btn primary" onclick="go(5)">Ir a la sala de espera</button></div>
+</section>
+
+<section class="card screen" data-screen="5">
+<div class="waiting"><div class="eyebrow">Registro confirmado</div><h2>Estamos preparando su ingreso</h2><p class="lead" style="margin:auto">Recursos Humanos ya puede ver que usted está disponible.</p><div class="countdown" id="countdown">00:05:00</div><button class="btn primary" id="joinButton" disabled onclick="enterJourney()">Esperando autorización</button><div class="ticket"><div class="kv"><span>Participante</span><strong id="waitingName">María González</strong></div><div class="kv"><span>Estado</span><strong>En sala de espera</strong></div><div class="kv"><span>Cámara</span><strong>Verificada</strong></div><div class="kv"><span>Micrófono</span><strong>Detectado</strong></div></div><div class="alert info">En producción, RH habilitará el ingreso desde su panel.</div></div>
+</section>
+
+<section class="card screen" data-screen="6">
+<div class="eyebrow">Tu recorrido de hoy</div><h2>Bienvenida, <span id="journeyName">María</span></h2><p class="lead">Aquí verá el avance de cada módulo.</p>
+<div class="journey"><div class="module"><div class="modicon">👋</div><div><h3>Bienvenida</h3><p>En curso</p></div><span class="pill pill-info">Actual</span></div><div class="module"><div class="modicon">🛡️</div><div><h3>EHS</h3><p>Pendiente</p></div><span class="pill pill-neutral">Pendiente</span></div><div class="module"><div class="modicon">👥</div><div><h3>Recursos Humanos</h3><p>Pendiente</p></div><span class="pill pill-neutral">Pendiente</span></div><div class="module"><div class="modicon">◆</div><div><h3>Calidad y SGC</h3><p>Pendiente</p></div><span class="pill pill-neutral">Pendiente</span></div><div class="module"><div class="modicon">🧴</div><div><h3>Químicos</h3><p>Pendiente</p></div><span class="pill pill-neutral">Pendiente</span></div><div class="module"><div class="modicon">✓</div><div><h3>BPM</h3><p>Requerido para Industria Médica</p></div><span class="pill pill-neutral">Pendiente</span></div></div>
+</section>
+</main>
+<footer class="footer">OnboardFlow · Diseñado y desarrollado por LillyTech</footer>
+<script>
+let current=0,attempts=0,seconds=300;const maxAttempts=6;
+function normalizeCode(v){return v.toUpperCase().replace(/[^A-Z0-9]/g,'')}
+document.getElementById('accessCode').addEventListener('input',e=>{let r=normalizeCode(e.target.value).slice(0,6);e.target.value=r.length>4?r.slice(0,4)+'-'+r.slice(4):r});
+function go(n){current=n;document.querySelectorAll('.screen').forEach((s,i)=>s.classList.toggle('active',i===n));document.querySelectorAll('.step').forEach((s,i)=>{s.classList.toggle('active',i===Math.min(n,5));s.classList.toggle('done',i<Math.min(n,5))});window.scrollTo({top:0,behavior:'smooth'})}
+function validateAccess(){const entered=normalizeCode(document.getElementById('accessCode').value),msg=document.getElementById('codeMessage');if(entered==='K7MR42'){const name=document.getElementById('fullName').value.trim()||'María González';document.getElementById('confirmedName').textContent=name;document.getElementById('waitingName').textContent=name;document.getElementById('journeyName').textContent=name.split(' ')[0];msg.classList.add('hidden');go(1);return}attempts++;msg.classList.remove('hidden');const left=maxAttempts-attempts;if(attempts>=maxAttempts){msg.className='alert bad';msg.innerHTML='<strong>Acceso bloqueado temporalmente.</strong><br>Solicite apoyo a su supervisor o a Recursos Humanos.';document.querySelector('[onclick="validateAccess()"]').disabled=true}else if(attempts>=4){msg.className='alert warn';msg.innerHTML=`Código no validado. Le quedan <strong>${left}</strong> intentos. Revise letras y números.`}else{msg.className='alert warn';msg.innerHTML=`Código no validado. Le quedan <strong>${left}</strong> intentos.`}}
+function acceptAndContinue(){if(!document.getElementById('acceptRules').checked){alert('Debe confirmar que leyó las reglas.');return}go(3)}
+async function runEquipmentCheck(){document.getElementById('internetStatus').textContent=navigator.onLine?'Disponible':'Sin conexión';document.getElementById('audioStatus').textContent='Disponible';let ok=false;try{const stream=await navigator.mediaDevices.getUserMedia({video:true,audio:true});document.getElementById('cameraStatus').textContent='Detectada';document.getElementById('micStatus').textContent='Detectado';stream.getTracks().forEach(t=>t.stop());ok=true}catch(e){document.getElementById('cameraStatus').textContent='Revisar permiso';document.getElementById('micStatus').textContent='Revisar permiso'}const m=document.getElementById('equipmentMessage');m.classList.remove('hidden');m.textContent=ok?'Equipo listo. Puede continuar.':'Revise los permisos de cámara y micrófono. Para esta demostración puede continuar.';document.getElementById('equipmentNext').disabled=false}
+function practiceHand(btn){btn.textContent='✋ Mano levantada';document.getElementById('handMessage').classList.remove('hidden')}
+setInterval(()=>{if(current!==5)return;if(seconds>0)seconds--;const m=String(Math.floor(seconds/60)).padStart(2,'0'),s=String(seconds%60).padStart(2,'0');document.getElementById('countdown').textContent=`00:${m}:${s}`;if(seconds<=295){const b=document.getElementById('joinButton');b.disabled=false;b.textContent='Entrar a la inducción'}},1000)
+function enterJourney(){go(6)}
+</script></body></html>
