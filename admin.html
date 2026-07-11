@@ -49,7 +49,31 @@
 <script>
 function showView(id,btn){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));btn.classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}
 function randomCode(){const chars='234679ACDEFGHJKMNPQRTUVWXYZ';let s='';for(let i=0;i<6;i++)s+=chars[Math.floor(Math.random()*chars.length)];return s.slice(0,4)+'-'+s.slice(4)}
-function approve(btn){const card=btn.closest('.person'),code=randomCode();card.querySelector('.pill').className='pill info';card.querySelector('.pill').textContent='Código '+code;card.querySelector('.actions').innerHTML='<button class="btn secondary" onclick="copyInvite(\\''+card.querySelector('.person-name').textContent+'\\',\\''+code+'\\')">Copiar invitación</button><button class="btn secondary">Regenerar</button>'}
+function renderCodeActions(card,code){
+  const actions=card.querySelector('.actions');
+  const name=card.querySelector('.person-name').textContent;
+  actions.innerHTML='';
+
+  const copyButton=document.createElement('button');
+  copyButton.className='btn secondary';
+  copyButton.textContent='Copiar invitación';
+  copyButton.addEventListener('click',()=>copyInvite(name,code));
+
+  const regenerateButton=document.createElement('button');
+  regenerateButton.className='btn secondary';
+  regenerateButton.textContent='Regenerar';
+  regenerateButton.addEventListener('click',()=>generateCode(regenerateButton));
+
+  actions.append(copyButton,regenerateButton);
+}
+function approve(btn){
+  const card=btn.closest('.person');
+  const code=randomCode();
+  const pill=card.querySelector('.pill');
+  pill.className='pill info';
+  pill.textContent='Código '+code;
+  renderCodeActions(card,code);
+}
 function generateCode(btn){approve(btn)}
 function copyInvite(name,code){const text=`Hola ${name}. Su inducción está programada. Ingrese desde el enlace recibido y utilice el código ${code}. Debe ingresar 10 minutos antes y tener cámara disponible.`;navigator.clipboard?.writeText(text);alert('Invitación copiada:\\n\\n'+text)}
 function updatePreview(){document.getElementById('previewCompany').textContent=document.getElementById('companyName').value||'Empresa';document.getElementById('previewPortal').textContent=document.getElementById('portalName').value||'Centro de Inducción';document.getElementById('previewHeader').style.background=document.getElementById('primaryColor').value;document.getElementById('previewButton').style.background=document.getElementById('accentColor').value}
