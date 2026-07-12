@@ -12,8 +12,8 @@
 @media(max-width:650px){.grid-4,.grid-3,.grid-2,.people,.form-grid{grid-template-columns:1fr}.metrics{margin-top:-22px}.brand small{display:none}}
 </style>
 </head>
-<body>
-<header class="top"><div class="top-inner"><div class="brand"><div class="mark">LT</div><div><strong>LillyTech</strong><small>OnboardFlow · Recursos Humanos</small></div></div><button class="btn secondary">Cerrar sesión</button></div></header>
+<body data-access-page="admin">
+<header class="top"><div class="top-inner"><div class="brand"><div class="mark">LT</div><div><strong>LillyTech</strong><small>OnboardFlow · Recursos Humanos</small></div></div><button class="btn secondary" data-sign-out>Cerrar sesión</button></div></header>
 <section class="hero"><div class="hero-inner"><div class="eyebrow">Acceso protegido</div><h1>Centro de control</h1><p>Revisión, elegibilidad, códigos, inducciones y empresas.</p></div></section>
 <main class="shell">
 <div class="tabs">
@@ -66,6 +66,9 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/supabase-config.js"></script>
+<script src="assets/auth.js"></script>
+<script src="assets/page-access.js"></script>
+<script src="assets/admin-candidates.js"></script>
 <script src="assets/supabase-data.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/xlsx-js-style@1.2.0/dist/xlsx.bundle.js"></script>
 <script src="assets/hr-management.js"></script>
