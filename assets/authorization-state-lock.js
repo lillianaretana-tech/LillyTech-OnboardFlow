@@ -79,5 +79,8 @@
   document.addEventListener('DOMContentLoaded', function () {
     checkAuthorization();
     pollTimer = setInterval(checkAuthorization, 2000);
+    const liveScript = document.createElement('script');
+    liveScript.src = 'assets/candidate-induction-live.js';
+    document.body.appendChild(liveScript);
   });
 })();
