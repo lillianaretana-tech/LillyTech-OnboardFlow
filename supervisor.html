@@ -8,6 +8,7 @@
 <body data-access-page="supervisor">
 <header class="top"><div class="top-inner"><div class="brand"><div class="mark">LT</div><div><strong>LillyTech</strong><small>OnboardFlow · Supervisor</small></div></div><span style="font-size:12px;color:#d7dce6">Acceso restringido</span></div></header>
 <section class="hero"><div class="hero-inner"><div class="eyebrow">Módulo 0 · Gestión de candidatos</div><h1>Registrar y validar</h1><p>Compruebe elegibilidad antes de enviar una persona a Recursos Humanos.</p></div></section>
+<script src="assets/internal-training.js" defer></script>
 <main class="shell">
 <div class="grid grid-3 metrics"><article class="card metric"><strong>0</strong><span>Mis candidatos</span></article><article class="card metric"><strong>0</strong><span>Pendientes de RH</span></article><article class="card metric"><strong>0</strong><span>Requiere revisión</span></article></div>
 
@@ -27,8 +28,9 @@
 <section class="card section">
 <h2>Mis candidatos recientes</h2><div class="people"><p>Cargando candidatos registrados...</p></div>
 </section>
+<section id="internalTraining" class="card section"><h2>Capacitaciones internas</h2><p>Cargando directorio de funcionarios y capacitaciones...</p></section>
 </main><footer class="footer">OnboardFlow · Diseñado y desarrollado por LillyTech</footer>
 <script>
 function checkEligibility(){const id=document.getElementById('candidateId').value.trim(),box=document.getElementById('eligibilityBox'),title=document.getElementById('eligibilityTitle'),text=document.getElementById('eligibilityText'),reg=document.getElementById('registrationSection');box.className='eligibility show';if(id.endsWith('999')){box.classList.add('bad');title.textContent='🔴 No elegible para contratación';text.textContent='No es posible continuar con este proceso. Comuníquese con Recursos Humanos.';reg.style.display='none'}else if(id.endsWith('555')){box.classList.add('review');title.textContent='🟡 Revisión de Recursos Humanos';text.textContent='No continúe todavía. Recursos Humanos debe revisar este registro.';reg.style.display='none'}else{box.classList.add('ok');title.textContent='🟢 Apto para continuar';text.textContent='La persona puede continuar con el proceso de contratación.';reg.style.display='block'}}
 function submitCandidate(){document.getElementById('submitMessage').classList.remove('hidden')}
-</script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="assets/supabase-config.js"></script><script src="assets/auth.js"></script><script src="assets/page-access.js"></script><script src="assets/supervisor-data.js"></script><script src="assets/supervisor-invitations.js"></script><script src="assets/supervisor-waiting-room.js"></script><script src="assets/supervisor-dashboard-details.js"></script><script src="assets/hiring-supervisor.js"></script></body></html>
+</script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="assets/supabase-config.js"></script><script src="assets/auth.js"></script><script src="assets/page-access.js"></script><script src="assets/supervisor-data.js"></script><script src="assets/supervisor-invitations.js"></script><script src="assets/email-invitation-link-fix.js"></script><script src="assets/supervisor-waiting-room.js"></script><script src="assets/supervisor-dashboard-details.js"></script><script src="assets/hiring-supervisor.js"></script></body></html>
