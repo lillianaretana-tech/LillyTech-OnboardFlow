@@ -9,11 +9,11 @@
 <header class="top"><div class="top-inner"><div class="brand"><div class="mark">LT</div><div><strong>LillyTech</strong><small>OnboardFlow · Supervisor</small></div></div><span style="font-size:12px;color:#d7dce6">Acceso restringido</span></div></header>
 <section class="hero"><div class="hero-inner"><div class="eyebrow">Módulo 0 · Gestión de candidatos</div><h1>Registrar y validar</h1><p>Compruebe elegibilidad antes de enviar una persona a Recursos Humanos.</p></div></section>
 <main class="shell">
-<div class="grid grid-3 metrics"><article class="card metric"><strong>8</strong><span>Mis candidatos</span></article><article class="card metric"><strong>2</strong><span>Pendientes de RH</span></article><article class="card metric"><strong>1</strong><span>Requiere revisión</span></article></div>
+<div class="grid grid-3 metrics"><article class="card metric"><strong>0</strong><span>Mis candidatos</span></article><article class="card metric"><strong>0</strong><span>Pendientes de RH</span></article><article class="card metric"><strong>0</strong><span>Requiere revisión</span></article></div>
 
 <section class="card section">
 <h2>Validar candidato</h2><p style="color:var(--muted)">La plataforma revisará duplicados, estado actual y elegibilidad.</p>
-<div class="grid grid-2"><div class="field"><label class="label">Nombre completo</label><input class="input" id="candidateName" value="María González"></div><div class="field"><label class="label">Número de identificación</label><input class="input" id="candidateId" placeholder="Ej. 1-2345-6789"></div></div>
+<div class="grid grid-2"><div class="field"><label class="label">Nombre completo</label><input class="input" id="candidateName"></div><div class="field"><label class="label">Número de identificación</label><input class="input" id="candidateId" placeholder="Ej. 1-2345-6789"></div></div>
 <button class="btn primary" onclick="checkEligibility()">Verificar elegibilidad</button>
 <div id="eligibilityBox" class="eligibility"><strong id="eligibilityTitle"></strong><p id="eligibilityText"></p></div>
 </section>
@@ -25,7 +25,7 @@
 </section>
 
 <section class="card section">
-<h2>Mis candidatos recientes</h2><div class="people"><article class="person"><div class="avatar">MG</div><div class="person-name">María González</div><div class="person-meta">Pendiente de RH</div><span class="pill pill-warn" style="margin-top:10px">Pendiente</span></article><article class="person"><div class="avatar">JR</div><div class="person-name">José Ramírez</div><div class="person-meta">Invitación generada</div><span class="pill pill-ok" style="margin-top:10px">Aprobado</span></article><article class="person"><div class="avatar">AM</div><div class="person-name">Ana Mora</div><div class="person-meta">Revisión confidencial</div><span class="pill pill-warn" style="margin-top:10px">Revisión RH</span></article></div>
+<h2>Mis candidatos recientes</h2><div class="people"><p>Cargando candidatos registrados...</p></div>
 </section>
 </main><footer class="footer">OnboardFlow · Diseñado y desarrollado por LillyTech</footer>
 <script>

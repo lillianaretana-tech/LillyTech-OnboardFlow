@@ -29,7 +29,7 @@
 
 <section class="card screen" data-screen="1">
 <h2>Su convocatoria</h2><p class="lead">Confirme que los datos son correctos.</p>
-<div class="ticket"><div class="kv"><span>Participante</span><strong id="confirmedName">María González</strong></div><div class="kv"><span>Proyecto</span><strong>Industria Médica</strong></div><div class="kv"><span>Supervisor</span><strong>Carlos Ramírez</strong></div><div class="kv"><span>Fecha</span><strong>Miércoles 15 de julio</strong></div><div class="kv"><span>Hora</span><strong>7:30 a. m.</strong></div></div>
+<div class="ticket"><div class="kv"><span>Participante</span><strong id="confirmedName">Pendiente de validar</strong></div><div class="kv"><span>Proyecto</span><strong id="confirmedProject">Pendiente de validar</strong></div><div class="kv"><span>Supervisor</span><strong id="confirmedSupervisor">Pendiente de validar</strong></div><div class="kv"><span>Fecha</span><strong id="confirmedDate">Pendiente de validar</strong></div><div class="kv"><span>Hora</span><strong id="confirmedTime">Pendiente de validar</strong></div></div>
 <div class="actions"><button class="btn secondary" onclick="go(0)">Atrás</button><button class="btn primary" onclick="go(2)">Los datos son correctos</button></div>
 </section>
 
@@ -62,7 +62,7 @@
 </section>
 
 <section class="card screen" data-screen="5">
-<div class="waiting"><div class="eyebrow">Registro confirmado</div><h2>Estamos preparando su ingreso</h2><p class="lead" style="margin:auto">Recursos Humanos ya puede ver que usted está disponible.</p><div class="countdown" id="countdown">00:05:00</div><button class="btn primary" id="joinButton" disabled onclick="enterJourney()">Esperando autorización</button><div class="ticket"><div class="kv"><span>Participante</span><strong id="waitingName">María González</strong></div><div class="kv"><span>Estado</span><strong>En sala de espera</strong></div><div class="kv"><span>Cámara</span><strong>Verificada</strong></div><div class="kv"><span>Micrófono</span><strong>Detectado</strong></div></div><div class="alert info">En producción, RH habilitará el ingreso desde su panel.</div></div>
+<div class="waiting"><div class="eyebrow">Registro confirmado</div><h2>Estamos preparando su ingreso</h2><p class="lead" style="margin:auto">Recursos Humanos ya puede ver que usted está disponible.</p><div class="countdown" id="countdown">00:05:00</div><button class="btn primary" id="joinButton" disabled onclick="enterJourney()">Esperando autorización</button><div class="ticket"><div class="kv"><span>Participante</span><strong id="waitingName">Candidato</strong></div><div class="kv"><span>Estado</span><strong>En sala de espera</strong></div><div class="kv"><span>Cámara</span><strong>Verificada</strong></div><div class="kv"><span>Micrófono</span><strong>Detectado</strong></div></div><div class="alert info">RH habilitará el ingreso desde su panel.</div></div>
 </section>
 
 <section class="card screen" data-screen="6">
@@ -82,4 +82,4 @@ async function runEquipmentCheck(){document.getElementById('internetStatus').tex
 function practiceHand(btn){btn.textContent='✋ Mano levantada';document.getElementById('handMessage').classList.remove('hidden')}
 setInterval(()=>{if(current!==5)return;if(seconds>0)seconds--;const m=String(Math.floor(seconds/60)).padStart(2,'0'),s=String(seconds%60).padStart(2,'0');document.getElementById('countdown').textContent=`00:${m}:${s}`;if(seconds<=295){const b=document.getElementById('joinButton');b.disabled=false;b.textContent='Entrar a la inducción'}},1000)
 function enterJourney(){go(6)}
-</script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="assets/supabase-config.js"></script><script src="assets/auth.js"></script><script src="assets/page-access.js"></script><script src="assets/candidate-data.js"></script></body></html>
+</script><script>window.validateAccess=()=>alert('El validador seguro todavía no está disponible. Actualice la página.');</script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="assets/supabase-config.js"></script><script src="assets/auth.js"></script><script src="assets/page-access.js"></script><script src="assets/candidate-data.js"></script></body></html>
